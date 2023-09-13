@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>coffeeshop</title>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1120.0" data-gr-ext-installed="">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <img src="images/angryimg.png" id="bg">
+    <nav class="navbar navbar-expand-lg" style="font-family:Arial, Helvetica, sans-serif">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images1.png" style="margin-left:-15px;width: 3rem; height: 2rem;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="box-shadow:none;">
+            <span><img class="img-fluid" style="height: 2rem;width: 2rem;;"      src="img/showmore.jpg"></span> 
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="index.html" style="color:#F4EBD0">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="color:#F4EBD0" class="nav-link dropdown-toggle active fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" style="background-color:#FF9EAA;">
+                  <li><a class="dropdown-item" href="menu.html" style="color:#F4EBD0">View Menu</a></li>
+                  <li><a class="dropdown-item" href="#" style="color:#F4EBD0">Coffee</a></li>
+                  <li><a class="dropdown-item" href="#" style="color:#F4EBD0">Juice</a></li>
+                  <li><a class="dropdown-item" href="#" style="color:#F4EBD0">Bread</a></li>
+                  <li><a class="dropdown-item" href="#" style="color:#F4EBD0">Dessert</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="app.html" style="color:#edccf9">App</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold position-relative" aria-current="page" href="account.html" style="color:#F4EBD0">Account
+                  <span class="position-absolute translate-middle badge rounded-pill bg-danger accnotify">
+                  3+
+                  <span class="visually-hidden">unread notifications</span>
+                </span></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 mw-100" style="background-color:#FFD0D0;" type="search" placeholder="Search for drinks, juice, ..." aria-label="Search">
+              <button class="btn fw-semibold" style="background-color:#FF9EAA;" type="submit">Go </button>
+            </form>
+          </div>
+        </div>
+  </nav>
+  <div class="menubody">
+    <div class="mt-2 mb-2 fw-semibold text-center menutopheader">Menu</div>
+    <div class="w-75 mx-auto" style="background-color:#a07b3b;height:2px;margin-bottom:30px;"></div>
+    <nav id="menunavbar" class="mx-auto navbar px-3 mb-3 rounded menunavbar" style="z-index:1">
+      <a class="navbar-brand menunavbarbrand" href="#"><img src="images\logo.png"></a>
+      <ul class="nav nav-pills text-center menuitemlist">
+        <li class="nav-item">
+          <a class="nav-link active" href="#coffeemenu">Coffee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#drinksmenu">Other drinks</a>
+        </li>
+      </ul>
+    </nav> 
+    <div style="color:#392b13;" data-bs-spy="scroll" data-bs-target="#menunavbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="mx-auto menucontent p-3 rounded-2" tabindex="0">
+      <h4 id="coffeemenu" class="text-center menuitemtitle">Coffee</h4>
+      <div class="w-100 mx-auto" style="background-color:#a07b3b;height:2px;margin-bottom:30px;"></div>
+      <div class="row row-cols-2 g-4">
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/bakhia.png">
+            <div class="fs-5 fw-bold">
+              Cappuccino<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/baotuca.png">
+            <div class="fs-5 fw-bold">
+              Americano<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/botmamcalinh.jpg">
+            <div class="fs-5 fw-bold">
+              Macchiato<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/botmamcaloc.jpg">
+            <div class="fs-5 fw-bold">
+              Espresso<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/botmamcasac.jpg">
+            <div class="fs-5 fw-bold">
+              Latte<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/cachem.png">
+            <div class="fs-5 fw-bold">
+              Frappé<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/cachet.png">
+            <div class="fs-5 fw-bold">
+              Black coffee<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/cachot.png">
+            <div class="fs-5 fw-bold">
+              Red eye<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/cacoc.png">
+            <div class="fs-5 fw-bold">
+              Affogato<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------------------------------------------->
+      <h4 id="drinksmenu" class="text-center mt-5 menuitemtitle">Other drinks</h4>
+      <div class="w-100 mx-auto" style="background-color:#a07b3b;height:2px;margin-bottom:30px;"></div>
+      <div class="row row-cols-2 g-4">
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/khocachach.jpg">
+            <div class="fs-5 fw-bold">
+              Watermelon Juice<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/Khocaloc.jpg">
+            <div class="fs-5 fw-bold">
+              Orange Juice<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/khocasac.jpg">
+            <div class="fs-5 fw-bold">
+              Apple Juice<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/khocasuu.jpg">
+            <div class="fs-5 fw-bold">
+              Lemonade<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/khocathu.jpg">
+            <div class="fs-5 fw-bold">
+              Traditional coke<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/khocatra.jpg">
+            <div class="fs-5 fw-bold">
+              Thai Tea<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="menuitem" style="height:100%;">
+            <img src="img/khocatren.jpg">
+            <div class="fs-5 fw-bold">
+              Pineapple juice<br>
+              5$
+            </div>
+            <button type="button" style="width:85%;" onclick="showToast()" class="btn btn-primary btn-sm mt-2 buyBtn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------------------------------------------->
+  
+      <!-------------------------------------------------------------------->
+      
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header" style="background-color:#392b13">
+              <strong class="me-auto"><img src="images\navlogo.png" style="width:50%"></strong>
+              <small style="width:30%;text-align:right;color:#F4EBD0">just now</small>
+              <button type="button" class="btn-close" style="background-color:#F4EBD0;" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body" style="background-color:#F4EBD0;color:#392b13">
+              (Item name) is added to cart!
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="checkout">
+    <div class="mt-3 rounded mx-auto p-3 cartcontainer">
+      <div class="text-center carttitle">Items in your cart</div>
+      <div class="w-100 mx-auto" style="background-color:#a07b3b;height:2px;margin-bottom:30px;"></div>
+      <div class="text-center" style="margin-top:40px;"><button type="button" style="width:50%" class="btn btn-primary btn-lg cartBtn">Checkout</button></div>
+    </div>
+  </div>
+  <footer class="footer">
+
+    <div class="row">
+          <div class="col-sm-3 col-md-3">
+              <div class="footerheader fw-semibold">Locations</div>
+              <div class="footertext">
+                  <li>2-6 Bis Điện Biên Phủ, P.Đa Kao, Quận 1, Tp Hồ Chí Minh</li>
+                  <li style="margin-top:7px;">298 Cầu Giấy, P. Quan Hoa, Q. Cầu Giấy, Hà Nội</li>
+                  <li style="margin-top:7px;">234 Phạm Văn Đồng, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</li>
+              </div>
+          </div>
+          <div class="col-sm-3 col-md-3">
+              <div>
+                  <div class="footerheader fw-semibold">Privacy Policy</div> 
+                  <div class="footertext">
+                      <li>Interpretation and Definitions</li>
+                      <li style="margin-top:7px;">Personal Data</li>
+                      <li style="margin-top:7px;">Social Data</li>
+                      <li style="margin-top:7px;">Data rights</li>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-3 col-md-3">
+              <div class="footerheader fw-semibold">Terms and Conditions</div>
+              <div class="footertext">
+                <li>Online services</li>
+                <li style="margin-top:7px;">Information practices and communication</li>
+                <li style="margin-top:7px;">Sending orders</li>
+                <li style="margin-top:7px;">Copyright notice</li>
+              </div>
+          </div>
+          <div class="col-sm-3 col-md-3 text-center">
+              <div class="footerheader fw-semibold" id="socials">Stay in touch with us!</div> 
+              <div class="socialicons">
+                <a href="#"><img src="images\facebook.png"></a>
+                <a href="#"><img src="images\youtube.png"></a>
+                <a href="#"><img src="images\instagram.png"></a>             
+              </div>
+          </div>
+    </div>
+    <div class="text-center mb-3 copyrighttext">
+      © 2023-2023 CAFEP All Rights Reserved
+    </div>
+  </footer>
+  <script>
+    function showToast() {
+        var toastElement = document.querySelector('.toast');
+        var toast = new bootstrap.Toast(toastElement);
+        toast.show();
+    }
+  </script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
